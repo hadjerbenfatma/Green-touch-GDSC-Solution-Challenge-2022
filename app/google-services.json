@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "728085754651",
+    "project_id": "temptest-ba24a",
+    "storage_bucket": "temptest-ba24a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728085754651:android:862bfe3de70da4ddd599be",
+        "android_client_info": {
+          "package_name": "com.example.smarthydroponics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728085754651-jqbpnumorj84dhqlomf9imt3bsom1f6r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smarthydroponics",
+            "certificate_hash": "359a045683b3c1f06b467f8557e75dc0b7a4915d"
+          }
+        },
+        {
+          "client_id": "728085754651-36198pfh8tvl35qp42dch79b44prv0cr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcXCik_pvEnGJMIdKWYq0ELdyFdxjDaBI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728085754651-36198pfh8tvl35qp42dch79b44prv0cr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D7E7F4"
+    tools:context=".fragments.SearchFragment"
+    android:padding="10dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/searchText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="type here to search"
+        android:textSize="28sp"
+        android:textColor="#ffff"
+        android:background="@drawable/layback"
+        android:padding="10dp"/>
+
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/ic_search"
+        android:backgroundTint="#787777" />
+
+</RelativeLayout>
+    <Space android:layout_width="wrap_content" android:layout_height="40dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="7"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="3">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:text="min"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#B0CFE8"
+            android:layout_gravity="center"
+            android:textSize="25sp"/>
+        <Space android:layout_width="10dp" android:layout_height="wrap_content"/>
+
+        <TextView
+            android:background="#B0CFE8"
+            android:text="max"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="PH"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#B0CFE8"
+            android:layout_gravity="center"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/pmin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"/>
+        <Space android:layout_width="10dp" android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/pmax"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+    <Space android:layout_width="wrap_content" android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="EC"
+            android:background="#B0CFE8"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/emin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"/>
+        <Space android:layout_width="10dp" android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/emax"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+    <Space android:layout_width="wrap_content" android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Temp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#B0CFE8"
+
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/tmin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"/>
+        <Space android:layout_width="10dp" android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tmax"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+    <Space android:layout_width="wrap_content" android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Hum"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#B0CFE8"
+
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/hmin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"/>
+        <Space android:layout_width="10dp" android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/hmax"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+    <Space android:layout_width="wrap_content" android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Light"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#B0CFE8"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/lmin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"/>
+        <Space android:layout_width="10dp" android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/lmax"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"/>
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Apply"
+        android:textColor="#2196F3"
+        android:layout_weight="1"
+        android:textSize="25sp"
+        android:background="@drawable/back"
+        android:layout_margin="10dp"/>
+</LinearLayout>
+
+</LinearLayout>

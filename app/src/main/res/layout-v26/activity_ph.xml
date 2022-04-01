@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+        <ProgressBar
+            android:id="@+id/progP"
+            android:layout_width="205dp"
+            android:layout_height="261dp"
+            android:indeterminateOnly="false"
+            android:max="14"
+            android:progress="13"
+            android:min="4"
+            android:progressDrawable="@drawable/progt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2">
+
+        </ProgressBar>
+
+            <TextView
+                android:id="@+id/textViewPh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="48dp"
+                android:text="7"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/progP"
+                app:layout_constraintEnd_toEndOf="@+id/progP"
+                app:layout_constraintStart_toStartOf="@+id/progP"
+                app:layout_constraintTop_toTopOf="@+id/progP"
+                app:layout_constraintVertical_bias="0.377" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:weightSum="2"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="2"
+                >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#24C1B2"
+            android:textSize="25sp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/control_panel"
+            android:layout_weight="1"
+            />
+
+        <Switch
+            android:id="@+id/switchAP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="auto/manual"
+            android:background="@drawable/background"
+            android:fontFamily="casual"
+            android:textColor="#ffff"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:textSize="25sp"/>
+        </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:weightSum="2"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+
+            <EditText
+                android:id="@+id/minP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/background"
+                android:fontFamily="casual"
+                android:padding="5dp"
+                android:hint="min PH"
+                android:layout_margin="10dp"
+                android:textColor="#ffff"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/maxP"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/background"
+                android:fontFamily="casual"
+                android:padding="5dp"
+                android:hint="max PH"
+                android:textColor="#ffff"
+                android:textSize="24sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+
+            <Switch
+                android:id="@+id/switchAc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/background"
+                android:fontFamily="casual"
+                android:padding="5dp"
+                android:visibility="invisible"
+                android:text="acide"
+                android:layout_margin="10dp"
+                android:textColor="#ffff"
+                android:textSize="25sp" />
+
+            <Switch
+                android:id="@+id/switchAl"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/background"
+                android:fontFamily="casual"
+                android:padding="5dp"
+                android:visibility="invisible"
+                android:text="alkaline"
+                android:textColor="#ffff"
+                android:textSize="24sp" />
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:background="#D7E7F4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#D7E7F4"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#D7E7F4" />
+
+
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+        ><LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1" android:background="@drawable/layback">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+
+                    android:fontFamily="casual"
+                    android:padding="1dp"
+                    android:text="humidity"
+                    android:textColor="#FAFAFA"
+                    android:textSize="25sp" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ProgressBar
+                        android:id="@+id/prog1"
+                        android:layout_width="205dp"
+                        android:layout_height="261dp"
+                        android:indeterminateOnly="false"
+
+                        android:progress="40"
+                        android:progressDrawable="@drawable/progbar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.2">
+
+                    </ProgressBar>
+
+                    <ImageView
+                        android:id="@+id/humidityImageView"
+                        android:layout_width="88dp"
+                        android:layout_height="177dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/prog1"
+                        app:layout_constraintEnd_toEndOf="@+id/prog1"
+
+                        app:layout_constraintHorizontal_bias="0.506"
+
+                        app:layout_constraintStart_toStartOf="@+id/prog1"
+                        app:layout_constraintTop_toTopOf="@+id/prog1"
+                        app:srcCompat="@drawable/ic_caa8e0b8cf5640599dfd4a13b4354a9c"
+                        tools:ignore="VectorDrawableCompat" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/textViewH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffff"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+            <Space android:layout_width="5dp" android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+
+                    android:fontFamily="casual"
+                    android:padding="1dp"
+                    android:text="temperature "
+                    android:textColor="#fafafa"
+                    android:textSize="25sp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/prog2"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="29dp"
+                        android:layout_height="130dp"
+                        android:max="50"
+                        android:progressDrawable="@drawable/ic_vertical_progress"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.434"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.496" />
+
+                    <ImageView
+                        android:id="@+id/thermometerImageView"
+                        android:layout_width="70dp"
+                        android:layout_height="263dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/ic_thermometer"
+                        tools:ignore="VectorDrawableCompat" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/textViewT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffff"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3DA2F3"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:text="@string/control_panel"
+                    />
+        <Space android:layout_width="wrap_content" android:layout_height="10dp"/>
+
+                <Switch
+                    android:id="@+id/switchM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="auto/manual"
+                    android:layout_weight="1"
+                    android:background="@drawable/layback"
+                    android:fontFamily="casual"
+                    android:textColor="#ffff"
+                    android:textSize="25sp"/>
+
+
+        <Space android:layout_width="wrap_content" android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+
+
+            <EditText
+                android:id="@+id/minT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layback"
+                android:fontFamily="casual"
+                android:hint="min °C"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="25sp" />
+            <Space android:layout_width="10dp" android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/maxT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+
+                android:layout_weight="1"
+                android:background="@drawable/layback"
+                android:fontFamily="casual"
+                android:hint="max °C"
+
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="25sp" />
+            <Space android:layout_width="10dp" android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/tOk"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/layback"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="OK"
+                android:textColor="#ffff"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+            android:gravity="center"
+                >
+
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:background="@drawable/layback"
+                android:fontFamily="casual"
+               android:padding="5dp"
+                android:text="fan   "
+                android:visibility="invisible"
+                android:textColor="#ffff"
+                android:textSize="25sp" />
+            <Space android:layout_width="10dp" android:layout_height="wrap_content"/>
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:background="@drawable/layback"
+                android:fontFamily="casual"
+                android:padding="5dp"
+                android:text="heater"
+                android:visibility="invisible"
+                android:textColor="#ffff"
+                android:textSize="25sp" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
