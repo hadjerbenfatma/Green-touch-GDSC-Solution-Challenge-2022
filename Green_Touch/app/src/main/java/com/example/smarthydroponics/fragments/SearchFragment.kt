@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.smarthydroponics.R
+import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.fragment_search.*
 
 /**
@@ -21,6 +22,8 @@ class SearchFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_search, container, false)
 
     }
+    val database = FirebaseDatabase.getInstance()
+    val databaseReference = database.reference
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

@@ -49,7 +49,7 @@
                 <TextView android:id="@+id/address" android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold" android:textSize="24dp"
-                    android:fontFamily="casual" android:text="welcome"  android:textColor="#2196F3"/>
+                    android:fontFamily="sans-serif-light" android:text="welcome"  android:textColor="#2196F3"/>
 
             </LinearLayout>
 
@@ -70,7 +70,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-light"
                     android:text="Summary"
                     android:textColor="#2196F3"
                     android:textSize="18sp" />
@@ -95,7 +96,7 @@
                         android:id="@+id/textViewP"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="casual"
+                        android:fontFamily="sans-serif-light"
                         android:text="PH:"
                         android:textColor="#2196F3" />
 
@@ -107,7 +108,7 @@
                         android:id="@+id/textViewHu"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="casual"
+                        android:fontFamily="sans-serif-light"
                         android:text="hum:"
                         android:textColor="#2196F3" />
 
@@ -119,7 +120,7 @@
                         android:id="@+id/textViewE"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="casual"
+                        android:fontFamily="sans-serif-light"
                         android:text="EC:"
                         android:textColor="#2196F3" />
 
@@ -131,7 +132,7 @@
                         android:id="@+id/textViewL"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="casual"
+                        android:fontFamily="sans-serif-light"
                         android:text="light:"
                         android:textColor="#2196F3" />
                 </LinearLayout>
@@ -173,15 +174,14 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/layback"
                                 android:gravity="center"
-
                                 android:orientation="vertical"
                                 android:padding="8dp">
                                 <ImageView android:layout_width="50dp" android:layout_height="50dp"
-                                    android:src="@drawable/ic_istockphoto_1196196526_612x612" />
+                                    android:src="@mipmap/ic_p" />
                                 <Space android:layout_width="wrap_content" android:layout_height="5dp"/>
                                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                                     android:textSize="14sp" android:text="PH Value"
-                                    android:textColor="#ffff" android:fontFamily="casual"
+                                    android:textColor="#ffff" android:fontFamily="sans-serif-light"
                                     />
 
                             </LinearLayout>
@@ -228,7 +228,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="tempreture&amp;humidity"
                                     android:textSize="13sp"
-                                    android:textColor="#ffff" android:fontFamily="casual"
+                                    android:textColor="#ffff" android:fontFamily="sans-serif-light"
                                     />
                             </LinearLayout>
 
@@ -273,7 +273,7 @@
                                     android:textColor="#ffff"/>
                                 <Space android:layout_width="wrap_content" android:layout_height="5dp"/>
                                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                    android:fontFamily="casual"  android:textSize="13sp"  android:textColor="#ffff" android:text="EC Value"/>
+                                    android:fontFamily="sans-serif-light"  android:textSize="13sp"  android:textColor="#ffff" android:text="EC Value"/>
 
                             </LinearLayout>
                         </RelativeLayout>
@@ -308,7 +308,7 @@
                                     android:src="@drawable/ic_light_svgrepo_com" android:tint="#FFFFFF"/>
                                 <Space android:layout_width="wrap_content" android:layout_height="5dp"/>
                                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                    android:fontFamily="casual"  android:textSize="13sp"  android:textColor="#ffff" android:text="Lighting"/>
+                                    android:fontFamily="sans-serif-light"  android:textSize="13sp"  android:textColor="#ffff" android:text="Lighting"/>
 
                             </LinearLayout>
 

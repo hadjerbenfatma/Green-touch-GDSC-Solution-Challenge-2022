@@ -45,12 +45,15 @@ class EcActivity : AppCompatActivity() {
             }})
         switchAE.setOnCheckedChangeListener{ compoundButton, onSwitch ->
             if(onSwitch){
+                databaseReference.child("Eauto").setValue("0")
+
                 switchEC.visibility= View.VISIBLE
                 minE.visibility= View.INVISIBLE
                 maxE.visibility= View.INVISIBLE
                 EOk.visibility= View.INVISIBLE
             }
             else{
+                databaseReference.child("Eauto").setValue("1")
                 switchEC.visibility= View.INVISIBLE
                 minE.visibility= View.VISIBLE
                 maxE.visibility= View.VISIBLE

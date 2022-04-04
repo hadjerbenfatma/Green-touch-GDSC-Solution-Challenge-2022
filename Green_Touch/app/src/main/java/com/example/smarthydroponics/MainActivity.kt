@@ -36,7 +36,9 @@ class MainActivity : AppCompatActivity() {
             val database = FirebaseDatabase.getInstance()
             val databaseReference = database.reference
         switchM.setOnCheckedChangeListener{ compoundButton, onSwitch ->
+
             if(onSwitch){
+                databaseReference.child("Tauto").setValue("0")
                 switch1.visibility= View.VISIBLE
                 switch2.visibility= View.VISIBLE
                 minT.visibility= View.INVISIBLE
@@ -44,6 +46,7 @@ class MainActivity : AppCompatActivity() {
                 tOk.visibility= View.INVISIBLE
             }
             else{
+                databaseReference.child("Tauto").setValue("1")
                 switch1.visibility= View.INVISIBLE
             switch2.visibility= View.INVISIBLE
             minT.visibility= View.VISIBLE

@@ -15,6 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="type here to search"
+        android:fontFamily="sans-serif-light"
         android:textSize="28sp"
         android:textColor="#ffff"
         android:background="@drawable/layback"
@@ -56,6 +57,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#B0CFE8"
+            android:fontFamily="sans-serif-light"
             android:layout_gravity="center"
             android:textSize="25sp"/>
         <Space android:layout_width="10dp" android:layout_height="wrap_content"/>
@@ -68,6 +70,7 @@
             android:layout_gravity="center"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
             android:textSize="25sp"/>
 
     </LinearLayout>

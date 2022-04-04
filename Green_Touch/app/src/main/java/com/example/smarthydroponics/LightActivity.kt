@@ -45,12 +45,14 @@ class LightActivity : AppCompatActivity() {
             }})
         switchAL.setOnCheckedChangeListener{ compoundButton, onSwitch ->
             if(onSwitch){
+                databaseReference.child("Lauto").setValue("0")
                 switchL.visibility= View.VISIBLE
                 minL.visibility= View.INVISIBLE
                 maxL.visibility= View.INVISIBLE
                 LOk.visibility= View.INVISIBLE
             }
             else{
+                databaseReference.child("Lauto").setValue("1")
                 switchL.visibility= View.INVISIBLE
                 minL.visibility= View.VISIBLE
                 maxL.visibility= View.VISIBLE

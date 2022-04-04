@@ -49,6 +49,7 @@ class PhActivity : AppCompatActivity() {
             }})
         switchAP.setOnCheckedChangeListener{ compoundButton, onSwitch ->
             if(onSwitch){
+                databaseReference.child("Pauto").setValue("0")
                 switchAc.visibility=View.VISIBLE
                 switchAl.visibility=View.VISIBLE
                 minP.visibility=View.INVISIBLE
@@ -56,6 +57,7 @@ class PhActivity : AppCompatActivity() {
                 POk.visibility=View.INVISIBLE
             }
             else{
+                databaseReference.child("Pauto").setValue("1")
                 switchAc.visibility=View.INVISIBLE
                 switchAl.visibility=View.INVISIBLE
                 minP.visibility=View.VISIBLE
